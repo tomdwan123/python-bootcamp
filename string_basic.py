@@ -19,3 +19,5 @@ my_languages = "I like python\ngolang\nand\njava"
 print((my_languages))
 
 print('He says: "I\'m 20"')
+
+info1 = '\'Jonathan\' is an apple variety and "Chardonnay" is a grape variety'
