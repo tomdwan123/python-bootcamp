@@ -44,3 +44,7 @@ print("Golang" in my_str)
 
 # not in
 print("Golang" not in my_str)
+
+# capitalize()
+s = 'pYThoN'
+print(s.capitalize()) # Python
