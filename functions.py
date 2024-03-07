@@ -132,3 +132,20 @@ print(result1) # 15
 
 r = (lambda a, b: min(a, b) * max(a, b))(10, 20)
 print(r) # 200
+
+# lambda
+def func4(a, b, c):
+    result = a + b + c
+    return result
+print(func4(1, 2, 3))
+
+result = (lambda a, b, c: a + b + c)(1, 2, 3)
+print(result)
+
+square = lambda x=10: x ** 2
+print(square(3))
+print(square())
+
+friends = [('Ana', 20), ('Bell', 30), ('Cowell', 10)]
+friends.sort(key= lambda x: x[1])
+print(friends)
