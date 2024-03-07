@@ -129,3 +129,6 @@ result = my_func('5', lambda x: x * 3)
 result1 = my_func(5, lambda x: x * 3)
 print(result) # 555
 print(result1) # 15
+
+r = (lambda a, b: min(a, b) * max(a, b))(10, 20)
+print(r) # 200
