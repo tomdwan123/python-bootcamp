@@ -12,3 +12,20 @@ sheet = wb.active
 b2_cell = sheet["B2"]
 print(b2_cell.value)
 print(sheet.cell(row=2, column=2).value)
+
+cell_range = sheet["B2: C11"]
+for product, price in cell_range:
+    print(f'Product: {product.value}    Price: {price.value}')
+
+print(f'Sheet Dimentions: {sheet.dimensions}')
+
+for a, b, c, d,e in sheet[sheet.dimensions]:
+    print(a.value, b.value, c.value, d.value, e.value)
+
+for row in sheet.rows:
+    for cell in row:
+        print(f'{cell.value} ', end='')
+    print("\n")
+
+for row in sheet.values:
+    print(row)
